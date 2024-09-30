@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Input } from "@/components/common/Input";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { useRouter } from "next/navigation";
 import Toast from "@/components/common/Toast";
+import { ResponseMessage, User } from "@/types";
 
 interface LoginType {
   emailOrPhone: string;
@@ -31,7 +32,7 @@ const LoginPage = () => {
     password: "",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log({ target: e.target });
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -68,7 +69,7 @@ const LoginPage = () => {
   };
 
   const validateForm = (): LoginType => {
-    let newErrors: LoginType = { emailOrPhone: "", password: "" };
+    const newErrors: LoginType = { emailOrPhone: "", password: "" };
     if (!formData.emailOrPhone)
       newErrors.emailOrPhone = "Email or Phone is required";
     if (!formData.password) newErrors.password = "Password is required";
@@ -173,7 +174,7 @@ const LoginPage = () => {
               </div>
               <div className="relative flex justify-center text-sm">
                 <span className="px-2 bg-white text-gray-500">
-                  Don't have an account?
+                  Don&apos;t have an account?
                 </span>
               </div>
             </div>

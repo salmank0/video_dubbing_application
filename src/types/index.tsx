@@ -12,7 +12,7 @@ export type User = {
 export type ResponseMessage = {
   status: boolean;
   message: string;
-  data?: any;
+  data?: string;
 };
 
 export interface AppContextType {

@@ -26,13 +26,13 @@ const DubbingPage: React.FC = () => {
 
   const saveVideo = () => {
     if (currentVideo && currentVideo.url) {
-      let isNew =
+      const isNew =
         videos.find((video) => video.id === currentVideo.id) === undefined;
 
       if (isNew) {
         setVideos([...videos, currentVideo]);
       } else {
-        let updatedVideos = videos.map((video) => {
+        const updatedVideos = videos.map((video) => {
           if (video.id === currentVideo.id) {
             return currentVideo;
           }

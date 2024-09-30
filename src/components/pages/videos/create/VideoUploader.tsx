@@ -6,7 +6,7 @@ import { Input } from "@/components/common/Input";
 import Toast from "@/components/common/Toast";
 
 export const VideoUploader: React.FC = () => {
-  const { videos, setVideos, currentVideo, setCurrentVideo } = useAppContext();
+  const { currentVideo, setCurrentVideo } = useAppContext();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [duration, setDuration] = useState(0);

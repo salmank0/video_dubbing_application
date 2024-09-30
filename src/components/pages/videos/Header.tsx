@@ -1,15 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useAppContext } from "@/context/AppContext";
-import { User, LogOut } from "lucide-react";
+import { User } from "lucide-react";
 
 export const Header: React.FC = () => {
-  const { user, setUser } = useAppContext();
-
-  const handleLogout = () => {
-    setUser(null);
-  };
+  const { user } = useAppContext();
 
   return (
     <header className="bg-primary text-white shadow-md">

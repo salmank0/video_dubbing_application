@@ -25,7 +25,7 @@ const RegisterPage = () => {
     password: "",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -45,7 +45,7 @@ const RegisterPage = () => {
   };
 
   const validateForm = () => {
-    let newErrors: User = { name: "", email: "", phone: "", password: "" };
+    const newErrors: User = { name: "", email: "", phone: "", password: "" };
     if (!formData.name) newErrors.name = "Full name is required";
     if (!formData.email) newErrors.email = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
@@ -57,7 +57,7 @@ const RegisterPage = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors = validateForm();
     if (

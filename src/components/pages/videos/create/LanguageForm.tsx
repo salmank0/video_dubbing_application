@@ -2,7 +2,7 @@ import Button from "@/components/common/Button";
 import { Input } from "@/components/common/Input";
 import Toast from "@/components/common/Toast";
 import { useAppContext } from "@/context/AppContext";
-import { DubbedAudio, Video } from "@/types/dubbingInterface";
+import { DubbedAudio } from "@/types/dubbingInterface";
 import React, { useState } from "react";
 
 const LanguageForm = ({ formSubmitted = () => {} }) => {
@@ -38,7 +38,7 @@ const LanguageForm = ({ formSubmitted = () => {} }) => {
       return;
     }
 
-    let newLanguage: DubbedAudio = {
+    const newLanguage: DubbedAudio = {
       id: Date.now().toString(),
       language: language.language,
       description: language.description,

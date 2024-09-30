@@ -13,7 +13,7 @@ const VideosPage = () => {
   if (!videos) return <div>No videos</div>;
 
   const showVideo = (id: string) => {
-    let selectedVideo = videos.find((video: Video) => video.id === id);
+    const selectedVideo = videos.find((video: Video) => video.id === id);
     if (selectedVideo) setCurrentVideo(selectedVideo);
     router.push(`/videos/create`);
   };

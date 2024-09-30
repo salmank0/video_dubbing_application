@@ -20,7 +20,7 @@ const AudioMic: React.FC<{
 
   useEffect(() => {
     audioContextRef.current = new (window.AudioContext ||
-      (window as any).webkitAudioContext)();
+      window.webkitAudioContext)() as AudioContext;
     analyserRef.current = audioContextRef.current.createAnalyser();
     return () => {
       if (audioContextRef.current) {

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useAppContext } from "@/context/AppContext";
 import { Audio, DubbedAudio } from "@/types/dubbingInterface";
 import { Input } from "@/components/common/Input";
