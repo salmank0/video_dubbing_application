@@ -31,18 +31,27 @@ const VideosPage = () => {
     <div>
       <Header />
 
-      <div className="p-5">
+      <div className="p-5 flex items-end">
         <Button label="Create Video" onClick={createVideo} />
       </div>
 
       {videos && videos.length > 0 ? (
-        <div className="max-w-40 flex flex-col mx-auto">
+        <div className="max-w-40 flex flex-col gap-3 mx-auto">
           {videos.map((video: Video) => (
-            <Button
-              label={"Play " + video.title}
+            <div
               key={video.id}
-              onClick={() => showVideo(video.id)}
-            />
+              className="w-full p-2 shadow-lg hover:shadow-2xl bg-background text-foreground cursor-pointer"
+              onClick={() => {
+                showVideo(video.id);
+              }}
+            >
+              <h3>{video.title}</h3>
+              <p>{video.description}</p>
+              <Button
+                label={"Play " + video.title}
+                onClick={() => showVideo(video.id)}
+              />
+            </div>
           ))}
         </div>
       ) : (
