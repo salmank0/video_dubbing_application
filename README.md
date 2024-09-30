@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dubbing Interface Prototype
 
-## Getting Started
+This project is a prototype of a mobile web-based dubbing interface, created as part of a Full Stack Developer test.
 
-First, run the development server:
+## How to Run the Application
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone this repository:
+   ```
+   git clone https://github.com/your-username/dubbing-interface.git
+   cd dubbing-interface
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+   ```
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-## Learn More
+## Approach and Use of AI-Assisted Coding
 
-To learn more about Next.js, take a look at the following resources:
+This project was developed using Next.js 14 and leveraged AI-assisted coding to accelerate development. The AI assistant (Claude) was used to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Generate the initial project structure and component files.
+2. Provide implementations for key features such as video playback, audio recording, and dialogue navigation.
+3. Ensure proper use of React hooks and Next.js best practices.
+4. Implement responsive design using Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The developer's role was to:
 
-## Deploy on Vercel
+1. Plan the overall architecture and component structure.
+2. Review and refine the AI-generated code.
+3. Integrate the components and ensure they work together seamlessly.
+4. Test the application and make necessary adjustments.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Challenges Faced and Solutions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Challenge**: Implementing audio recording and playback.
+   **Solution**: Used the Web Audio API and MediaRecorder to handle audio recording. Stored the recorded audio as a Blob and created an object URL for playback.
+
+2. **Challenge**: Syncing recorded audio with video playback.
+   **Solution**: Implemented a custom sync function that resets both video and audio to the beginning and plays them simultaneously.
+
+3. **Challenge**: Responsive design for mobile and desktop.
+   **Solution**: Utilized Tailwind CSS classes to create a mobile-first design that adapts well to larger screens.
+
+## Potential Improvements
+
+Given more time, the following improvements could be made:
+
+1. Implement waveform visualization for the recorded audio.
+2. Add offline functionality using local storage to save recording progress.
+3. Implement user authentication for a more personalized experience.
+4. Enhance error handling and add more comprehensive unit tests.
+5. Optimize performance, especially for larger video files and longer recordings.
+
+## Deployment
+
+This application can be easily deployed using platforms like Vercel or Netlify. Simply connect your GitHub repository to these platforms, and they will automatically deploy your application with each push to the main branch.
+
