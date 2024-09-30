@@ -1,0 +1,125 @@
+{
+  "id": "1727672500842",
+  "title": "Success",
+  "description": "succeeding in life",
+  "duration": 35,
+  "url": "blob:http://localhost:3000/6ff83d40-6ebd-465f-a386-6aae42bb9cb6",
+  "originalLanguage": "English",
+  "audios": [
+    {
+      "id": "1727672500842",
+      "language": "English",
+      "description": "",
+      "audios": [
+        {
+          "url": "blob:http://localhost:3000/324e3e2c-4245-4439-8b24-0ab869775a7c",
+          "startTime": 1,
+          "endTime": 6.5
+        },
+        {
+          "url": "blob:http://localhost:3000/f4d6471b-bc4e-44e5-8704-d4b8bf40ba36",
+          "startTime": 6.5,
+          "endTime": 9.5
+        },
+        {
+          "url": "blob:http://localhost:3000/cc8feb80-f795-4742-9588-8e260a13af39",
+          "startTime": 9.5,
+          "endTime": 13.5
+        },
+        {
+          "url": "blob:http://localhost:3000/61cae48f-4919-4e3f-9b07-140b2a547342",
+          "startTime": 13.5,
+          "endTime": 16
+        },
+        {
+          "url": "blob:http://localhost:3000/9c7d8933-ea39-4f9c-ab0f-c9095b39ecf6",
+          "startTime": 16,
+          "endTime": 19.5
+        }
+      ],
+      "subTitles": [
+        {
+          "startTime": 1,
+          "endTime": 6.5,
+          "text": "Success isn't just about hard work, it's about consistency."
+        },
+        {
+          "startTime": 6.5,
+          "endTime": 9.5,
+          "text": "Setbacks are steps forward, not the end."
+        },
+        {
+          "startTime": 9.5,
+          "endTime": 13.5,
+          "text": "Believe in yourself, and the world will follow."
+        },
+        { "startTime": 13.5, "endTime": 16, "text": "Dream big, work harder." },
+        {
+          "startTime": 16,
+          "endTime": 19.5,
+          "text": "Success comes to those who never give up."
+        }
+      ]
+    },
+    {
+      "id": "1727673192598",
+      "language": "Hindi",
+      "description": "Dubbed version in Hindi Language",
+      "audios": [
+        {
+          "url": "blob:http://localhost:3000/23cbf396-bf8c-482d-95b5-51f345eea30c",
+          "startTime": 1,
+          "endTime": 6.5
+        },
+        {
+          "url": "blob:http://localhost:3000/4a81c872-ce69-4db3-ad7e-fdae43dccd78",
+          "startTime": 6.5,
+          "endTime": 9.5
+        },
+        {
+          "url": "blob:http://localhost:3000/d27e1cce-8961-4b10-999b-9077309dcaa2",
+          "startTime": 9.5,
+          "endTime": 13.5
+        },
+        {
+          "url": "blob:http://localhost:3000/120a9387-bf5a-4ea2-8081-a2a8a26e5e8f",
+          "startTime": 13.5,
+          "endTime": 16
+        },
+        {
+          "url": "blob:http://localhost:3000/7ec895d2-5f73-4a58-b3b5-b42e57a0470d",
+          "startTime": 16,
+          "endTime": 19.5
+        }
+      ],
+      "subTitles": [
+        {
+          "startTime": 1,
+          "endTime": 6.5,
+          "text": "सफलता सिर्फ मेहनत से नहीं, निरंतरता से मिलती है।"
+        },
+        {
+          "startTime": 6.5,
+          "endTime": 9.5,
+          "text": "विफलताएँ आगे बढ़ने के कदम हैं, अंत नहीं।"
+        },
+        {
+          "startTime": 9.5,
+          "endTime": 13.5,
+          "text": "खुद पर विश्वास करो, और दुनिया तुम्हारा साथ देगी।"
+        },
+        {
+          "startTime": 13.5,
+          "endTime": 16,
+          "text": "बड़ा सपना देखो, और उससे भी ज्यादा मेहनत करो।"
+        },
+        {
+          "startTime": 16,
+          "endTime": 19.5,
+          "text": "सफलता उन्हें मिलती है जो कभी हार नहीं मानते।"
+        }
+      ]
+    }
+  ],
+  "selectedLanguage": "Hindi"
+}
